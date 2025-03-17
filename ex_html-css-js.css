@@ -1,13 +1,33 @@
 body {
-   ...........
+   background-color: #faf0dc;
+   font-family: Arial, sans-serif;
+   color:black;
 }
 
 h1 {
-   ...........
+   font-size: 32px;
+   color: #a4161a;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+h2{
+   font-size: 24px;
+   color: #5f5e5e;
+   margin-bottom: 15px;
+}
+
+img{
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 15px;
 }
 
 form {
-   ...........
+   background-color: #ffffff;
+   border-radius: 5px;
+   padding: 20px;
+   margin
 }
 
 ............
