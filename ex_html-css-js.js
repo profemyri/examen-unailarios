@@ -1,7 +1,8 @@
-
 //Función principal para los datos del usuario
 
 let formulario=document.getElementById("formulario");
+
+
 
 let nombre=document.getElementById.trim(("nombre"));
 let direccion=document.getElementById.trim(("direccion"));
