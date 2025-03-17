@@ -1,5 +1,4 @@
 function validarFormulario(event) {
-    event.preventDefault();
 
     let nombre = document.getElementById("nombre").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
