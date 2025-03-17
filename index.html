@@ -7,54 +7,56 @@
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Realiza tu pedido</h1>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
+    <h1>Realiza tu pedido</h1>
+    <img src="cheese-burger.png" id="fotoHamburguesa" descripcion="A la rica hamburguesa">
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required>
 
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" name="direccion" required>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required>
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="tipo-hamburguesa">Tipo de hamburguesa:</label>
-            <select id="tipo-hamburguesa" name="tipo-hamburguesa">
-                <option value="clasica">Clásica</option>
-                <option value="bbq">BBQ</option>
-                <option value="especial">Especial</option>
-            </select>
+        <label for="tipo-hamburguesa">Tipo de hamburguesa:</label>
+        <select id="tipo-hamburguesa" name="tipo-hamburguesa">
+            <option value="clasica">Clásica</option>
+            <option value="bbq">BBQ</option>
+            <option value="especial">Especial</option>
+        </select>
 
-            <div class="extra-ingredients">
-                <label>Ingredientes extra (1€ cada uno, mínimo 2)</label>
-                <label><input type="checkbox" name="extra" value="queso"> Queso</label>
-                <label><input type="checkbox" name="extra" value="bacon"> Bacon</label>
-                <label><input type="checkbox" name="extra" value="huevo"> Huevo</label>
-            </div>
+        <div class="extra-ingredients">
+            <label>Ingredientes extra (1€ cada uno, mínimo 2)</label>
+            <label><input type="checkbox" name="extra" value="queso"> Queso</label>
+            <label><input type="checkbox" name="extra" value="bacon"> Bacon</label>
+            <label><input type="checkbox" name="extra" value="huevo"> Huevo</label>
+        </div>
 
-            <label for="cantidad">Cantidad</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
 
-            <label for="metodo-pago">Método de pago:</label>
-            <select id="metodo-pago" name="metodo-pago">
-                <option value="tarjeta">Tarjeta</option>
-                <option value="efectivo">Efectivo</option>
-            </select>
+        <label for="metodo-pago">Método de pago:</label>
+        <select id="metodo-pago" name="metodo-pago">
+            <option value="tarjeta">Tarjeta</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
 
-            <label for="instrucciones">Instrucciones adicionales:</label>
-            <textarea id="instrucciones" name="instrucciones" rows="4" placeholder="Escriba tus preferencias..."></textarea>
+        <label for="instrucciones">Instrucciones adicionales:</label>
+        <textarea id="instrucciones" name="instrucciones" rows="4" placeholder="Escriba tus preferencias..."></textarea>
 
-            <div class="total"></div>
+        <div class="total"></div>
 
-            <button type="submit" class="submit-button">Enter Pablo</button>
-        </form>
-    </div>
+        <button type="submit" class="submit-button">Enter Pablo</button>
+    </form>
+</div>
+    <script src="ex_html-css-js.js"></script>
+
 </body>
 </html>
