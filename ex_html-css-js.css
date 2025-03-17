@@ -18,7 +18,7 @@ h2 {
 }
 
 img{
-   align-items: center;
+   image-orientation: center;
    border-radius: 5px;
    margin-bottom: 15px;
 }
