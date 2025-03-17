@@ -1,55 +1,39 @@
 
 //Función principal para los datos del usuario
 
-function validarFormulario(event) {
+let formulario=document.getElementById("formulario");
 
-    let nombre = document.getElementById("nombre").value.trim();
-    let telefono = document.getElementById("telefono").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let direccion = document.getElementById("direccion").value.trim();
+let nombre=document.getElementById.trim(("nombre"));
+let direccion=document.getElementById.trim(("direccion"));
+let telefono=document.getElementById.trim(("telefono"));
+let email=document.getElementById.trim(("email"));
 
-    if (!nombre) {
-        alert("El campo nombre es obligatorio.");
+formulario.onsubmit(){
+
+    if(nombre.value.trim().===" "){
+        alert("El campo nombre es incorrecto.");
         return;
-    }
+    };
 
-    if (!telefono) {
-        alert("El campo teléfono es obligatorio.");
+    if(direccion.value.trim().length<15){
+        alert("El campo dirección es menor de 15.");
         return;
-    }
+    };
 
-    if (!email) {
-        alert("El campo email es obligatorio.");
+    if(isNaN(telefono)){
+        alert("El campo teléfono es incorrecto.");
         return;
-    }
+    };
 
-    if (!direccion) {
-        alert("El campo dirección es obligatorio.");
+    if(telefono.value.trim().length<9){
+        alert("El campo teléfono es incorrecto. Tiene pocos dígitos");
         return;
-    }
+    };
 
-    if (!email.includes("@")) {
-        alert("El email debe contener el @.");
+    if(!email.contains("@")){
+        alert("El campo email es incorrecto.");
         return;
-    }
-
-    if (telefono.length < 9) {
-        alert("El teléfono debe contener solo números y tener 9 dígitos.");
-        return;
-    }
-
-    if (direccion.length < 15) {
-        alert("La dirección debe tener mínimo 15 caracteres.");
-        return;
-    }
-
-    let confirmacion = confirm("¿Quieres confirmar y enviar tu pedido ahora?");
-    if (confirmacion) {
-        alert("¡Gracias por tu pedido,"[nombre]);
-        event.target.submit();
-    } else {
-        alert("El pedido no se ha enviado.");
-    }
+    };
 }
 
 let preciosHamburguesa = {
