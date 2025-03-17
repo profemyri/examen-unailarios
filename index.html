@@ -10,46 +10,46 @@
     <h1>Realiza tu pedido</h1>
     <img src="cheese-burger.png" id="fotoHamburguesa" descripcion="A la rica hamburguesa">
     <form>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
 
-        <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" name="apellidos" required>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" required><br>
 
-        <label for="direccion">Dirección</label>
-        <input type="text" id="direccion" name="direccion" minlength="15" required>
+        <label for="direccion">Dirección</label><br>
+        <input type="text" id="direccion" name="direccion" minlength="15" required><br>
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" min="9" max="9" required>
+        <label for="telefono">Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono" min="9" max="9" required><br>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
 
-        <label for="tipo-hamburguesa">Tipo de hamburguesa:</label>
-        <select id="tipo-hamburguesa" name="tipo-hamburguesa">
+        <label for="tipo-hamburguesa">Tipo de hamburguesa:</label><br>
+        <select id="tipo-hamburguesa" name="tipo-hamburguesa"><br>
             <option value="clasica">Clásica</option>
             <option value="bbq">BBQ</option>
             <option value="especial">Especial</option>
         </select>
 
-        <div class="extra-ingredients">
-            <label>Ingredientes extra (1€ cada uno, mínimo 2)</label>
+        <div class="extra-ingredients"><br>
+            <label>Ingredientes extra (1€ cada uno, mínimo 2)</label><br>
             <label><input type="checkbox" name="extra" value="queso"> Queso</label>
             <label><input type="checkbox" name="extra" value="bacon"> Bacon</label>
             <label><input type="checkbox" name="extra" value="huevo"> Huevo</label>
         </div>
 
-        <label for="cantidad">Cantidad</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+        <label for="cantidad">Cantidad</label><br>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required><br>
 
-        <label for="metodo-pago">Método de pago:</label>
-        <select id="metodo-pago" name="metodo-pago">
+        <label for="metodo-pago">Método de pago:</label><br>
+        <select id="metodo-pago" name="metodo-pago"><br>
             <option value="tarjeta">Tarjeta</option>
             <option value="efectivo">Efectivo</option>
         </select>
 
-        <label for="instrucciones">Instrucciones adicionales:</label>
-        <textarea id="instrucciones" name="instrucciones" rows="4" placeholder="Escriba tus preferencias..."></textarea>
+        <label for="instrucciones">Instrucciones adicionales:</label><br>
+        <textarea id="instrucciones" name="instrucciones" rows="4" placeholder="Escriba tus preferencias..."></textarea><br>
 
         <button type="submit" class="submit-button">Enviar Pedido</button>
         <button type="submit" class="submit-button">Modo Oscuro</button>
