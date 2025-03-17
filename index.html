@@ -10,6 +10,9 @@
     <h1>Realiza tu pedido</h1>
     <img src="cheese-burger.png" id="fotoHamburguesa" descripcion="A la rica hamburguesa">
     <form>
+
+        <h2> Datos:</h2>
+
         <label for="nombre">Nombre</label><br>
         <input type="text" id="nombre" name="nombre" required><br>
 
@@ -25,12 +28,18 @@
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email" required><br>
 
+
+        <h2> Tipo de Hamburguesa:</h2>
+
         <label for="tipo-hamburguesa">Tipo de hamburguesa:</label><br>
         <select id="tipo-hamburguesa" name="tipo-hamburguesa"><br>
             <option value="clasica">Clásica</option>
             <option value="bbq">BBQ</option>
             <option value="especial">Especial</option>
         </select>
+
+
+        <h2> Ingredientes extra-ingredients:</h2>
 
         <div class="extra-ingredients"><br>
             <label>Ingredientes extra (1€ cada uno, mínimo 2)</label><br>
